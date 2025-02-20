@@ -31,10 +31,24 @@
 
 
 
-def become_warrior(full_name, power):
-    title = f"{full_name} aka 'The Beast'"
-    new_power = power + 1
-    return title, new_power
+# def become_warrior(full_name, power):
+#     title = f"{full_name} aka 'The Beast'"
+#     new_power = power + 1
+#     return title, new_power
 
-name, strength = become_warrior("Obafemi Martins", 98);
-print(f"One of the best strikers in the Italian League back in the early 2000s was {name}.\nHis strength on PlayStation 1 was {strength}")
+# name, strength = become_warrior("Obafemi Martins", 98);
+# print(f"One of the best strikers in the Italian League back in the early 2000s was {name}.\nHis strength on PlayStation 1 was {strength}")
+
+
+
+# In Python you can specify a default value for a function argument. It's nice for when a function has arguments that are "optional". You as the function definer can specify a specific default value in case the caller doesn't provide one.
+# A default value is created by using the assignment (=) operator in the function signature.
+
+def get_greeting(name, email, age="32"):
+    print(f"My name is {name}, I am {age} years old and my email is {email}")
+
+print(get_greeting("Sam Altman", "saltman@openai.com", 39))
+print(get_greeting("Eben Ofere", "eofere@openai.com"));
+
+# If the second parameter is omitted, the default "there" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
+
