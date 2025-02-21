@@ -32,9 +32,7 @@ When working with strings the + operator performs a "concatenation", which is a 
 
 
 Printing vs. Returning
-Some new developers get hung up on the difference between print() and return.
-
-It can be particularly confusing when the test suite we provide simply prints the output of your functions to the console. It makes it seem like print() and return are interchangeable, but they are not!
+Some new developers get hung up on the difference between print() and return. It can be particularly confusing when the test suite we provide simply prints the output of your functions to the console. It makes it seem like print() and return are interchangeable, but they are not!
 
 print() is a function that:
 -	Prints a value to the console

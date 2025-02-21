@@ -44,11 +44,31 @@
 # In Python you can specify a default value for a function argument. It's nice for when a function has arguments that are "optional". You as the function definer can specify a specific default value in case the caller doesn't provide one.
 # A default value is created by using the assignment (=) operator in the function signature.
 
-def get_greeting(name, email, age="32"):
-    print(f"My name is {name}, I am {age} years old and my email is {email}")
+# def get_greeting(name, email, age="32"):
+#     print(f"My name is {name}, I am {age} years old and my email is {email}")
 
-print(get_greeting("Sam Altman", "saltman@openai.com", 39))
-print(get_greeting("Eben Ofere", "eofere@openai.com"));
+# print(get_greeting("Sam Altman", "saltman@openai.com", 39))
+# print(get_greeting("Eben Ofere", "eofere@openai.com"));
 
-# If the second parameter is omitted, the default "there" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
+# If the third parameter is omitted, the default "32" value will be used in its place. As you may have guessed, for this structure to work, optional arguments (the ones with defaults) must come after all required arguments.
 
+
+
+# def get_slashed(health, armor = 0):
+#     damage = 100 - armor
+#     new_health = health - damage
+#     return new_health
+
+# health_after_slash = get_slashed(500, 10)
+# print("health after slash =", health_after_slash)
+
+
+
+def curse(weapon_damage):
+    lesser_cursed = 0.5 * weapon_damage
+    greater_cursed = 0.25 * weapon_damage
+    return lesser_cursed, greater_cursed
+
+witch_curse, archmage_curse = curse(100)
+print (f"with the lesser curse, the damage is {witch_curse}")
+print(f"with the greater curse, the damage is {archmage_curse}")
