@@ -64,11 +64,14 @@
 
 
 
-def curse(weapon_damage):
-    lesser_cursed = 0.5 * weapon_damage
-    greater_cursed = 0.25 * weapon_damage
-    return lesser_cursed, greater_cursed
+# def curse(weapon_damage):
+#     lesser_cursed = 0.5 * weapon_damage
+#     greater_cursed = 0.25 * weapon_damage
+#     return lesser_cursed, greater_cursed
 
-witch_curse, archmage_curse = curse(100)
-print (f"with the lesser curse, the damage is {witch_curse}")
-print(f"with the greater curse, the damage is {archmage_curse}")
+# witch_curse, archmage_curse = curse(100)
+# print (f"with the lesser curse, the damage is {witch_curse}")
+# print(f"with the greater curse, the damage is {archmage_curse}")
+
+
+
